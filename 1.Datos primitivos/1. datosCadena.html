@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de JavaScript</title>
+</head>
+
+<body>   
+    <h1> Fundamentos de JavaScript =D </h1>
+
+  
+    <script>
+        /*  para darle a la cadenas metodos en los que permite solo
+            palabras en mayusculas o en minusculas */
+
+
+            let nombre = 'sebastián';
+            let apellido = 'oquendo';
+            let edad = 33;
+            let saludo = new String('Hola a tod@s'); // declaran con el constructor es poco usada
+
+            //MAYUSCULAS toUpperCase
+            //MINUSCULAS toLowerCase
+            console.log(nombre.toUpperCase(), apellido.toLowerCase(), saludo);
+            
+        /* metodo para busqueda de un valor  */
+
+            let texto = '      Node.js es un entorno en tiempo de ejecución multiplataforma..'
+            
+            console.log(
+                texto.includes('full'),  // la consola mostrara falso
+                texto.includes('entorno'), // la consola mostrara verdadero
+                texto.trim(),  // quita espacios al inicio y al final de una cadena
+                texto.split(" "), // convierte una cadena de texto a arreglo
+            )
+
+
+        // CONCATENACIÓN para datos seguidos 
+
+            console.log('Mi nombre es ' + nombre + ' ' + apellido);
+
+        // INTERPOLACIÓN con Template String `` conserva la identacion
+
+            console.log(`${saludo} mi nombre es ${nombre} ${apellido} y tengo ${edad} años`);
+
+            let ul =
+                 `<ul>
+                    <li>Verano</li>
+                    <li>Otoño</li>
+                    <li>Invierno</li>
+                    <li>Primavera</li>
+                </ul>`;
+
+            console.log(ul);
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

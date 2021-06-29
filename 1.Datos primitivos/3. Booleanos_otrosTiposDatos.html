@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booleans</title>
+
+</head>
+
+<body>
+    <h1>Booleans, null, undefined, NaN</h1>
+
+    <!--Al parecer una variable con un valor que no represente un conjunto vacio 
+            es tomada como verdadera, a menos que se defina lo contrario
+                
+        FALSY Y TRUTHY son valores que tienden a verdadero o falso, respectivamente-->
+    
+    <script>
+        let verdadero = true;
+        let falso = false;
+        let v = Boolean(true);
+        let f = Boolean(false);
+
+        console.log(verdadero, falso, v, f);
+        console.log(typeof verdadero, typeof falso, typeof v, typeof f);
+
+        console.log(Boolean (0)); //falsy
+        console.log(Boolean (-7));          //truthy
+        console.log(Boolean (""));  //falsy
+        console.log(Boolean(" "));          //truthy     
+
+
+        //          UNDEFINED Y NULL ambas indican que hay ausencia de un valor su diferencia es:
+
+        let indefinido;  /* variable a la que no se le asigna un valor o no esta inicializada
+                            JS la identifica como UNDEFINED */
+
+        let nulo = null; /*variable que se le asinga un valor nulo intencionalmente */
+
+        console.log(indefinido, nulo);
+
+
+        //          NaN  NOT A NUMBER  Cuando se hara una operacion aritmetica con un dato numerico
+
+        let noEsNumerico = 'hola' * 4;
+        let cadenaNumero = '3' * 5;     //si la cadena es un numero, hace la operacion
+
+        console.log(noEsNumerico, cadenaNumero);
+
+
+    </script>
+
+
+
+</body>
+</html>

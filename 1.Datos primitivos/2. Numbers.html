@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos tipo numero</title>
+</head>
+
+<body>
+
+    <h1>Nummberrsss</h1>
+ 
+    <script>
+
+        // Para los numeros no hay clasificacion como en la mayoria de lenguajes
+
+    let a = 5;
+    let b = new Number(3);
+    let c = 7.4563;
+    let d = '2.57'       /* un numero que ingresa como tipo cadena, se puede cambiar a tipo numerico 
+                         con parseint(entero) o parsefloat(decimal) */
+
+    console.log(a, b);
+    console.log(a + b); //concatenacion con tipos numeros realiza operacion aritmetica
+    
+    console.log(c.toFixed(2)); //metodo para redondear un decimal
+    console.log(c.toFixed(8));
+    
+    console.log(parseInt(c)); //metdodo parse: decimal a entero
+    console.log(parseInt(d));   //metodo parse: cadena a numero
+    console.log(parseFloat(d).toFixed(1)); //metodo parse: texto a numero redondeando
+   
+
+    </script>    
+
+
+</body>
+</html>

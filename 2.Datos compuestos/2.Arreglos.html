@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos</title>
+</head>
+
+<body>
+<h1>Arreglos</h1>
+
+    <script>
+    
+    //      la declaracion del arreglo puede hacerse con CONST o LET
+
+    const a = [2,4,6];
+
+    //                      se pueden hacer arreglos dentro de un arreglo
+    let b = ['fruta', 'verdura', 3,5, ['a', 'b', 'c',['azul', 'rojo']]];
+
+    console.log(a.length, b.length);  // para conocer la cantidad de elementos
+    console.log(b[0], b[4][3][0]);  // para acceder a la posicion del array
+
+
+                // Otras formas para declarar array 
+
+    const c = Array.of('x', 'y', 6, 7);
+
+    let d = Array(100).fill(false); /* metodo para ingresar cantidad de espacios
+                                    del array y con que contendra -> .fill */
+
+    const e = new Array();
+
+    const f = new Array(1,2,3, true);
+
+    console.log(c);
+    console.log(d);
+    console.log(e);
+    console.log(f);
+
+    let colores = ['negro', 'morado', 'verde'];
+    
+    colores.push('azul', 'rosado');  /*    para ingresar elementos al array, lo que se
+                                        ingrese queda en la ultima posicion */
+                                        
+    console.log(colores);  
+
+
+                            //         para cambiar el valor de una posicion especifica
+    let animales = ['sapo', 'vaca', 'caballo'];
+
+    animales[1] = "gato";  //   se cambio el valor de la posicion 1 'vaca' por 'gato'
+    animales.pop(animales);     // metodo para borrar la ultima posicion en un array
+
+    console.log(animales);
+
+
+                    /*      Metodo .foreach para realizar una funciion a cada elemento
+                            del array*/
+
+    colores.forEach (function(el, index) {   /*  se indicaron los parametros
+                            el (para el valor del elemento e index(para la
+                            posicion del elemento)) */
+
+        console.log(`<li id= "${index}"> ${el}</li>`);
+
+    })
+    
+
+    
+
+
+
+
+    </script>
+
+    
+
+
+
+
+</body>
+</html>

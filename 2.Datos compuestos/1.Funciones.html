@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+
+<body>
+
+    <script>
+
+    /*     La funcion es un bloque de codigo, autocontenido, que se puede
+            definir una vez y ejecutar en cualquier momento. Tambien puede
+            aceptar parametros y devolver un valor
+            
+            En JS son objetos.
+
+            Pueden asignarsen a un valor, pueden pasarse como argumentos y 
+            usarse como un valor de retorno.
+                                                                        */
+    
+    // Declarando funcion
+
+    function primerFuncion() {
+        console.log('uno');
+        console.log('dos');
+        return 66;              // las lineas que sigan se omitiran
+        console.log('*****************');
+        return 'La funcion ha retornado una cadena de texto'
+    }
+
+    // Invocando funcion 
+
+    let impresionFuncion = primerFuncion();
+    primerFuncion(); 
+    console.log(impresionFuncion);     /*para que muestre en consola el return
+                                     de la funcion */
+    
+
+    //      FUNCIONES CON PARAMETROS
+
+    function saludo (nombre = `"Asigne un nombre"`, edad = `"Asigne una edad"`) { /* se le puede dar
+                                            un valor por defecto a los parametros */
+        console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años`);
+    }
+
+    saludo('Ciro', 2);
+    saludo();
+
+
+    //   FUNCIONES DECLARADAS VS FUNCIONES EXPRESADAS
+                //las funciones pueden invocarse en cualquier parte del codigo
+
+    declarandoFunct()
+    
+    function declarandoFunct () {
+        console.log('Declarando función');
+    }
+    
+    declarandoFunct()
+
+                /* una funcion expresada es a la que se le asigna una variable,
+                    normalmente se asinga como constante*/
+
+    nuevaDeclaracion();  /* al estar expresada no se ejecutara la invocacion 
+                            antes de la declaracion de la funcion*/ 
+
+    const nuevaDeclaracion= function() {
+        console.log('Expresando función');
+    }
+
+    nuevaDeclaracion();
+    
+    </script>
+    
+</body>
+</html>

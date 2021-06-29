@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+<h1> Objetos</h1>
+
+<script>
+
+    /* Los objetos tiene atributos(propiedades) y metodos (funciones).
+        Los atributos estan comprendidos por una llave que tiene  un valor */
+
+    let sujeto1 = {
+
+        nombre: 'Johny',
+        apellido: 'Oquendo',
+        edad: 33,
+        pasatiempos: ['correr', 'estudiar', 'dormir'], //puede tener array
+        soltero: true,
+        contacto: {                    // puede tener objeto
+            email: 'hll@gmail.com',
+            telefono: 12345,
+            },
+        saludar: function () {
+            console.log('Hola!');
+           },
+                    /*   para usar un atributo dentro del mismo objeto
+                        se usa .this */
+        presentacion: function() {
+            console.log(`Hola soy ${this.nombre} y tengo ${this.edad} años`);    
+            }
+    };
+
+
+            // formas de acceder a los atributos de un objeto
+
+    console.log(sujeto1['nombre']);
+    console.log(sujeto1.apellido);  // las mas comun y practica
+    console.log(sujeto1.pasatiempos[2]); /* en el atributo array se puede 
+                                indicar la posicion de un elmento dentro
+                                del array */
+    console.log(sujeto1.contacto.email); //  objeto dentro del objeto
+    sujeto1.saludar();
+    sujeto1.presentacion();
+
+    
+    //              algunos metodos 
+
+    console.log(Object.keys(sujeto1));  // lista en orden las llaves
+    console.log(Object.values(sujeto1)); //  lista en orden los valores 
+    
+                                    /* indica si elobjeto tiene esa propiedad */
+    console.log(sujeto1.hasOwnProperty('nacimiento'));
+    console.log(sujeto1.hasOwnProperty('nombre'));  
+
+
+</script>
+    
+</body>
+</html>
