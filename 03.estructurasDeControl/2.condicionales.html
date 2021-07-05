@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales</title>
+</head>
+<body>
+<h1>Condionales</h1>
+
+<script>
+
+//                          if else ; if  else if (anidadas)
+
+let edad = 25
+
+if (edad < 18) {
+    console.log('Eres menor de edad');
+} else { 
+    console.log('Eres mayor de edad');
+}
+
+
+/* 
+si la hora es 00 a las 05 consolelog "Dejame dormir"
+si la hora es 06 a las 11 consolelog "Buenos dias!""
+si la hora es 12 a las 17 consolelog "Buenas tardes!""
+si la hora es 18 a las 23 consolelog "Buenas noches!"
+*/
+
+let hora= 24;
+
+if (hora >= 0 && hora <=5) {
+    console.log('Dejame dormir');
+} else if (hora >= 6 && hora <=11) {
+    console.log('Buenos días!');
+} else if (hora >= 12 && hora <=18) {
+    console.log('Buenos tardes!')
+} else if (hora >= 19 && hora <= 23) {
+    console.log('Buenos noches!')
+} else {
+    console.log("Ingrese una hora entre las 00hrs y las 23hrs");
+}
+
+
+
+
+</script>
+
+    
+</body>
+</html>

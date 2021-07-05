@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipo de Operadores</title>
+</head>
+<body>
+    <h1>Tipo de operadores</h1>
+    
+<!--                     OPERACIONES ARITMETICAS
+
+        +  SUMA
+        -  RESTA
+        +  MULTIPLICACION
+        /  DIVISION
+
+    Ademas se encuentra una operacion con la que se
+    obtendra el residuo entero de una division
+
+        %  MODULO
+-->
+
+<script>
+let a = 5+10-8/2; // se respeta el orden de las operaciones
+console.log(a);
+
+
+/*                        OPERADORES RELACIONALES 
+
+        <   menor    
+        >   mayor
+        ==  igual
+        <=  menor igual
+        >=  mayor igual
+
+        manejo de los =, ==, ===
+
+        =       asigna un valor a una variable. Ejm: "let a = 2+2;"
+        ==      comparacion de valores. "
+        ===     comparacion de tipo de valor y valor.
+
+*/
+
+console.log(3>2);
+console.log(3<2);
+console.log(3>=2);
+console.log(3<=2); 
+
+console.log(`           uso de ==                            `);
+console.log(3==3);         
+console.log('3'==3);    // es truthy, tiende a verdadro
+console.log(0==false);  // es truthy, tiende a verdadro
+
+console.log(`           uso de ===                                   `);
+console.log(3===3);
+console.log('3'===3);   // es falsy, tiende a falso
+console.log(3===false); // es falsy, tiende a falso
+
+
+/*              OPERADORES DE INCREMENTO Y DECREMENTO 
+
+                    Cuando se realizara una operacion aritmentica
+                    donde la variable se operara con cualquier numero
+
+*/
+
+let b = 3;
+let c = 5;
+
+b += 5;         // es igual a declarar "b = b + 5"
+c *= 3;         // es igual a declarar "c = c * 3"
+
+console.log(`          Operadores de incremento y decremento
+
+                        b = ${b}
+                        c = ${c}
+
+`); 
+
+
+/*               OPERADORES UNARIOS 
+
+                sirven para aumentar o disminuir el valor de una
+                variable en una unidad (suma o resta).
+
+                i++  para sumar; puede usarse tambien ++i
+                i--  para restar; puede usarse tambien --i
+*/
+
+
+b++
+c--
+
+console.log(`       Operadores unarios
+
+                    b++ = ${b}
+                    c-- = ${c}
+`);
+
+
+/*               OPERADORES LOGICOS
+
+                 !    not: para hacer negacion
+
+                 ||   or: para indicar que si una condicion
+                          es verdadera, valida a verdadero
+
+                 &&   and: para indicar que solo valida a
+                           verdadero cuando las condciones
+                           son verdaderas 
+                 
+                 */
+
+console.log(`Negacion con !: ${!true}, ${!false}`);    
+console.log("Usando ||: ('9'===9 || 9===9) = " + ('9'===9 || 9===9));
+console.log("Usando &&: ('9'===9 || 9===9) = " + ('9'===9 && 9===9));
+     
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
