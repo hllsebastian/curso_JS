@@ -42,6 +42,68 @@ if (hora >= 0 && hora <=5) {
     console.log("Ingrese una hora entre las 00hrs y las 23hrs");
 }
 
+/*          OPERADOR TERNARIO
+
+            Permite simplificar el if else.
+
+            estructura:
+                    (Condicion) 
+                    ? "si es verdadero, aca va la instruccion a ejecutar"         
+                    : "si es falso, aca va la instruccion a ejecutar"
+ */
+
+        let edad1 = 30
+
+        let eresMayor = (edad > 17) 
+        ? 'Eres mayor de edad'
+        : 'Eres menos de edad';
+        console.log(eresMayor);
+
+/*                  SWITCH CASE
+
+                Sirve para declarar un variable con diferentes valores
+                que ademas tienen un caso.
+
+ */
+
+
+let dia = 3;
+
+switch (dia) {
+    case 0: {
+        console.log('Domingo');
+    }   
+    break;
+
+    case 1:
+        console.log('Lunes');   
+        break;
+
+    case 2:
+        console.log('Martes');   
+        break;
+
+    case 3:
+        console.log('Miercoles');   
+        break;
+
+    case 4:
+        console.log('Jueves');   
+        break;
+
+    case 5:
+        console.log('Viernes');   
+        break;
+
+    case 5:
+        console.log('Sabado');   
+        break;
+
+    default: 
+        console.log('Ingrese un numero del 0 al 6');
+        break;
+}
+
 
 
 
